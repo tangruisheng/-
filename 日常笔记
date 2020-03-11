@@ -4,3 +4,4 @@
 string.match(/.{1,10}/g).join("<br/>");   
 
 第二个
+555
