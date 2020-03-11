@@ -6,3 +6,18 @@ string.match(/.{1,10}/g).join("<br/>");
 第二个
 
 第二个333
+ public function behaviors()
+    {
+        return [
+            TimestampBehavior::class,
+        ];
+    }
+
+    /**
+     * 启用
+     * @return bool
+     */
+    public function enable()
+    {
+        return static::updateAttributes(['is_enable' => self::STATUS_YES]) !== false;
+    }
